@@ -36,4 +36,4 @@ Right={
 [rendering]
 
 textures/canvas_textures/default_texture_repeat=1
-environment/defaults/default_clear_color=Color(0.0146903, 0.703232, 0.885352, 1)
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

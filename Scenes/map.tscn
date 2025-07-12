@@ -1,0 +1,127 @@
+[gd_scene load_steps=3 format=3 uid="uid://bp2jqqubwnleh"]
+
+[ext_resource type="Texture2D" uid="uid://bbpck558fvayb" path="res://Sprites/0.5x/0.5x/Asset 1@0.5x.png" id="1_ci6au"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_26yhd"]
+
+[node name="Map" type="Node2D"]
+
+[node name="Wall 1" type="StaticBody2D" parent="."]
+position = Vector2(-1.00003, -328)
+rotation = 1.57079
+scale = Vector2(1, 63.08)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall 1"]
+shape = SubResource("RectangleShape2D_26yhd")
+
+[node name="Line2D" type="Line2D" parent="Wall 1"]
+points = PackedVector2Array(0, 9.131, 0, -0.00661373, 0, -9.179)
+texture = ExtResource("1_ci6au")
+texture_mode = 2
+
+[node name="Wall 2" type="StaticBody2D" parent="."]
+position = Vector2(-1, 325)
+rotation = 1.57079
+scale = Vector2(1, 63.08)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall 2"]
+shape = SubResource("RectangleShape2D_26yhd")
+
+[node name="Line2D" type="Line2D" parent="Wall 2"]
+points = PackedVector2Array(0, 9.131, 0, -0.00661373, 0, -9.179)
+texture = ExtResource("1_ci6au")
+texture_mode = 2
+
+[node name="Wall 7" type="StaticBody2D" parent="."]
+position = Vector2(-1, -4)
+rotation = 3.14159
+scale = Vector2(1, 63.08)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall 7"]
+shape = SubResource("RectangleShape2D_26yhd")
+disabled = true
+
+[node name="Line2D" type="Line2D" parent="Wall 7"]
+points = PackedVector2Array(0, 9.131, 0, -0.00661373, 0, -9.179)
+texture = ExtResource("1_ci6au")
+texture_mode = 2
+
+[node name="Goal Left" type="StaticBody2D" parent="."]
+position = Vector2(-581, -4)
+rotation = 3.14159
+scale = Vector2(1, 63.08)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Goal Left"]
+shape = SubResource("RectangleShape2D_26yhd")
+
+[node name="Line2D" type="Line2D" parent="Goal Left"]
+visible = false
+points = PackedVector2Array(0, 9.131, 0, -0.00661373, 0, -9.179)
+texture = ExtResource("1_ci6au")
+texture_mode = 2
+
+[node name="Goal Right" type="StaticBody2D" parent="."]
+position = Vector2(580, -3)
+rotation = 3.14159
+scale = Vector2(1, 63.08)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Goal Right"]
+shape = SubResource("RectangleShape2D_26yhd")
+
+[node name="Line2D" type="Line2D" parent="Goal Right"]
+visible = false
+points = PackedVector2Array(0, 9.131, 0, -0.00661373, 0, -9.179)
+texture = ExtResource("1_ci6au")
+texture_mode = 2
+
+[node name="Wall 3" type="StaticBody2D" parent="."]
+position = Vector2(-577, 228)
+scale = Vector2(0.548868, 10.4734)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall 3"]
+shape = SubResource("RectangleShape2D_26yhd")
+
+[node name="Line2D" type="Line2D" parent="Wall 3"]
+points = PackedVector2Array(0, 9.131, 0, -0.00661373, 0, -9.179)
+texture = ExtResource("1_ci6au")
+texture_mode = 2
+
+[node name="Wall 4" type="StaticBody2D" parent="."]
+position = Vector2(-577, -230)
+scale = Vector2(0.548868, 10.4734)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall 4"]
+shape = SubResource("RectangleShape2D_26yhd")
+
+[node name="Line2D" type="Line2D" parent="Wall 4"]
+points = PackedVector2Array(0, 9.131, 0, -0.00661373, 0, -9.179)
+texture = ExtResource("1_ci6au")
+texture_mode = 2
+
+[node name="Wall 5" type="StaticBody2D" parent="."]
+position = Vector2(576, 228)
+scale = Vector2(0.548868, 10.4734)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall 5"]
+shape = SubResource("RectangleShape2D_26yhd")
+
+[node name="Line2D" type="Line2D" parent="Wall 5"]
+points = PackedVector2Array(0, 9.131, 0, -0.00661373, 0, -9.179)
+texture = ExtResource("1_ci6au")
+texture_mode = 2
+
+[node name="Wall 6" type="StaticBody2D" parent="."]
+position = Vector2(576, -230)
+scale = Vector2(0.548868, 10.4734)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall 6"]
+shape = SubResource("RectangleShape2D_26yhd")
+
+[node name="Line2D" type="Line2D" parent="Wall 6"]
+points = PackedVector2Array(0, 9.131, 0, -0.00661373, 0, -9.179)
+texture = ExtResource("1_ci6au")
+texture_mode = 2
+
+[node name="Camera2D" type="Camera2D" parent="."]
+scale = Vector2(1, -0.440002)
+zoom = Vector2(1.64, 1.64)
